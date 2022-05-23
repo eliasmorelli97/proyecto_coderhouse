@@ -36,9 +36,11 @@ img {
 header {
     background-color: #151313;
     width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
 }
 
 header picture {
@@ -46,14 +48,22 @@ header picture {
 }
 
 header picture img {
-    max-width: 200px;
-    min-width: 150px;
+    max-width: 20rem;
+    min-width: 15rem;
+}
+
+.menu_icon img {
+    width: 3rem;
+    border-radius: 2px;
+}
+
+.menu_icon, #check {
+    display: none;
 }
 
 nav ul {
     display: flex;
     flex-basis: 60%;
-    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -77,46 +87,39 @@ nav ul li a:hover::after {
 /* MAIN */
 
 main {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 12.5rem auto 1rem auto;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
-}
-
-h1 {
-    background-color: rgb(20, 68, 36);
-    color: white;
-    text-align: center;
-    font-size: 6em;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .card {
-    margin: 60px 0;
+    margin: 6rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .card__text {
-    flex-basis: 50%;
+    flex-basis: 65%;
 }
 
 .card__text__title {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 .card__text__paragraph {
-    font-size: 2.5em;
-    padding-top: 30px;
+    font-size: 2.2em;
+    margin-top: 1rem;
     text-align: justify;
 }
 
 .card__image {
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 .opening {
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .opening__title {
@@ -133,20 +136,23 @@ footer {
     width: 100%;
     background-color: rgb(24, 34, 72);
     margin-top: auto;
+    padding: 3rem;
+}
+
+.footer_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .contact {
-    margin: 30px 0px 30px 60px;
     flex-basis: 40%;
 }
 
 .contact__title {
     color: white;
     font-size: 3em;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .contact__form {
@@ -156,22 +162,24 @@ footer {
 
 .contact__form__control {
     background-color: rgb(24, 34, 72);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #1f53c5;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 0.1rem solid #1f53c5;
     font-size: 1.6em;
     color: white;
 }
 
 .contact__form #comment {
-    height: 200px;
+    height: 20rem;
 }
 
 .contact__form__button {
+    width: 40%;
+    align-self: center;
     background-color: #1f53c5;
-    border-radius: 5px;
-    padding: 12px;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
     border: none;
     color: white;
     font-size: 1.8em;
@@ -180,14 +188,13 @@ footer {
 .social_media {
     flex-basis: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .social_media picture img {
-    margin-right: 100px;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .characters {
@@ -200,12 +207,8 @@ footer {
 
 .characters__card__title {
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 5px;
-}
-
-.characters__card__image {
-    /* width: 500px; */
 }
 
 .titans {
@@ -218,22 +221,200 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    flex: 1 1 clamp(250px, 100%, 400px);
 }
 
 .titans__card__title {
-    font-size: 40px;
-    margin-top: 60px;
-    margin-bottom: 15px;
+    font-size: 3.1em;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .titans__card__paragraph {
-    font-size: 25px;
+    font-size: 2em;
     text-align: justify;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .titans__card__image {
-    margin-bottom: 60px;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    main {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header picture img {
+        max-width: 15rem;
+        min-width: 10rem;
+    }
+
+    nav ul a {
+        font-size: 2.3em;
+    }
+
+    main {
+        font-size: 0.65em;
+    }
+
+    footer {
+        font-size: 0.65em;
+    }
+
+    .characters__card {
+        font-size: 0.7em;
+    }
+
+    .titans__card {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        font-size: 0.7em;
+    }
+
+    .opening__video {
+        height: 28rem;
+    }
+
+    footer {
+        font-size: 0.55em;
+    }
+
+    .social_media picture img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: block;
+        position: fixed;
+        top: 10rem;
+        left: -100%;
+        background: #151313;
+        width: 100%;
+        right: 0;
+    }
+
+    nav ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+    
+    main {
+        max-width: 80%;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .card__image {
+        margin-top: 3rem;
+    }
+
+    .opening {
+        margin-bottom: 3rem;
+    }
+
+    .opening__video {
+        height: 28rem;
+    }
+
+    .footer_container {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .social_media {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .social_media picture img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .characters {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        row-gap: 3rem;
+    }
+
+    .titans {
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .titans__card__paragraph {
+        margin-bottom: 0rem;
+    }
+
+    .titans__card__image {
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        margin-top: 8rem;
+        font-size: 0.5em;
+    }
+
+    .card {
+        margin: 3rem 0;
+    }
+
+    .card__image {
+        margin-top: 1rem;
+    }
+
+    .opening {
+        margin: 3rem 0;
+    }
+
+    .opening__video {
+        margin-top: 1rem;
+        height: 12rem;
+    }
+
+    .characters {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
 }

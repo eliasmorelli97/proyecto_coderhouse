@@ -14,6 +14,10 @@
             <img src="../media/logo_principal.png" alt="Logo del We Love AOT">
         </picture>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu_icon"><img src="../media/menu.png" alt="Icono menú"></i>
+            </label>
             <ul>
                 <li>
                     <a href="../index.html">Home</a>
@@ -34,7 +38,7 @@
         </nav>
     </header>
     <!-- HEADER FIN -->
-    <h1>Militares</h1>
+    <!-- MAIN INICIO  -->
     <main>
         <section class="card">
             <div class="card__text">
@@ -53,9 +57,6 @@
             </picture>
         </section>
         <section class="card">
-            <picture class="card__image">
-                <img src="../media/cuerpos_de_exploracion.png" alt="Portada Temporada 1 Attack On Titan">
-            </picture>
             <div class="card__text">
                 <h2 class="card__text__title">Cuerpo de Exploración</h2>
                 <p class="card__text__paragraph">
@@ -67,6 +68,9 @@
                     numquam voluptates! Eius libero accusamus reiciendis aut doloribus reprehenderit, consequatur officiis architecto ipsam!
                 </p>
             </div>
+            <picture class="card__image">
+                <img src="../media/cuerpos_de_exploracion.png" alt="Portada Temporada 1 Attack On Titan">
+            </picture>
         </section>
         <section class="card">
             <div class="card__text">
@@ -85,27 +89,30 @@
             </picture>
         </section>
     </main>
+    <!-- MAIN FIN  -->
     <!-- FOOTER INICIO -->
     <footer>
-        <div class="contact">
-            <h2 class="contact__title">Dejanos un comentario acerca del sitio</h2>
-            <form class="contact__form">
-                <input class="contact__form__control" type="text" name="name" placeholder="Ingrese un nombre">
-                <input class="contact__form__control" type="mail" name="mail" placeholder="Ingrese un mail">
-                <input class="contact__form__control" type="textarea" name="comment" id="comment" placeholder="Deje un comentario">
-                <input class="contact__form__button" type="submit">
-            </form>
-        </div>
-        <div class="social_media">
-            <picture>
-                <img src="../media/logo_facebook.png" alt="Logo Facebook">
-            </picture>
-            <picture>
-                <img src="../media/logo_twitter.png" alt="Logo Twitter">
-            </picture>
-            <picture>
-                <img src="../media/logo_instagram.png" alt="Logo Instagram">
-            </picture>
+        <div class="footer_container">
+            <div class="contact">
+                <h2 class="contact__title">Dejanos un comentario acerca del sitio</h2>
+                <form class="contact__form">
+                    <input class="contact__form__control" type="text" name="name" placeholder="Ingrese un nombre">
+                    <input class="contact__form__control" type="mail" name="mail" placeholder="Ingrese un mail">
+                    <input class="contact__form__control" type="textarea" name="comment" id="comment" placeholder="Deje un comentario">
+                    <input class="contact__form__button" type="submit">
+                </form>
+            </div>
+            <div class="social_media">
+                <picture>
+                    <img src="../media/logo_facebook.png" alt="Logo Facebook">
+                </picture>
+                <picture>
+                    <img src="../media/logo_twitter.png" alt="Logo Twitter">
+                </picture>
+                <picture>
+                    <img src="../media/logo_instagram.png" alt="Logo Instagram">
+                </picture>
+            </div>
         </div>
     </footer>
     <!-- FOOTER FIN -->
