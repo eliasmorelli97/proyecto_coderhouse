@@ -52,6 +52,10 @@ header picture img {
     min-width: 15rem;
 }
 
+header picture img:hover {
+    animation: bounce 1s linear;
+}
+
 .menu_icon img {
     width: 3rem;
     border-radius: 2px;
@@ -166,7 +170,7 @@ footer {
     border-radius: 0.5rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 0.1rem solid #1f53c5;
+    border: 0.1rem solid #2980b9;
     font-size: 1.6em;
     color: white;
 }
@@ -178,12 +182,13 @@ footer {
 .contact__form__button {
     width: 40%;
     align-self: center;
-    background-color: #1f53c5;
+    background-color: #2980b9;
     border-radius: 0.5rem;
     padding: 1.2rem;
     border: none;
     color: white;
     font-size: 1.8em;
+    cursor: pointer;
 }
 
 .social_media {
@@ -192,10 +197,43 @@ footer {
     justify-content: space-around;
 }
 
-.social_media picture img {
-    border-radius: 0.5rem;
-    width: 5rem;
-    height: 5rem;
+.social_media a {
+    display: inline-flex;
+    font-size: 3em;
+    color: white;
+    width: 8rem;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.social_media a::before {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background: #2980b9;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social_media a:hover::before {
+    transform: scale(0);
+}
+
+.social_media a i {
+    transition: 0.3s ease-in;
+}
+
+.social_media a:hover i {
+    background: #2980b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
 }
 
 .characters {
@@ -313,6 +351,23 @@ footer {
 
 .titans__box__image {
     width: 100%;
+}
+
+/* ANIMACIONES */
+
+@keyframes bounce {
+    20%, 50%, 80%, to {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-4px);
+    }
 }
 
 /* RESPONSIVE */
