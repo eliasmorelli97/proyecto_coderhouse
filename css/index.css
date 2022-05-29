@@ -496,9 +496,15 @@ footer {
         width: 100%;
     }
 
-    .social_media picture img {
-        width: 3rem;
-        height: 3rem;
+    .social_media a {
+        font-size: 2em;
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .social_media a::before {
+        width: 6rem;
+        height: 6rem;
     }
 
     .characters {
@@ -592,12 +598,6 @@ footer {
 
     .titans__box__image {
         margin-top: 0rem;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    nav ul {
-        top: 8rem;
     }
 }
 
@@ -701,5 +701,22 @@ footer {
     .characters__box:nth-of-type(15) {
         grid-column: 1 / 13;
         grid-row: 15;
+    }
+
+    .social_media a {
+        font-size: 1.5em;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .social_media a::before {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    nav ul {
+        top: 8rem;
     }
 }
