@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <title>We Love AoT | Home</title>
 </head>
@@ -40,23 +41,25 @@
     </header>
     <!-- HEADER FIN -->
     <!-- SECCIONES INICIO -->
-    <main>
-        <section class="box">
-            <div class="box__text">
-                <h2 class="box__text__title">Attack On Titan (Shingeki No Kyojin)</h2>
-                <p class="box__text__paragraph">
-                    Attack On Titan (en japonés: "Shingeki No Kyojin") es un anime japonés que adapta el manga creado por Hajime Isayama.
-                    La obra trata acerca de un mundo en el cual la humanidad se encuentra casi extinta, debido a la existencia de unos gigantes
-                    de aspecto humano, los cuales son conocidos como "Titanes". Para evitar la extición, la humanidad se refugia dentro de tres murallas
-                    de 50 metros de altura, las cuales poseen puertas para poder entrar y salir de las mismas, y vive dentro de ellas, 
-                    evitando ser devorados por los Titanes. Todo iba bien hasta que un día, se produce la aparición de un Titan cuya altura superaba la de las murallas, 
-                    y éste destruye la puerta, logrando que los Titanes ingresen dentro de las murallas. Aquel día, la humanidad recordó que la paz en la que vivían 
-                    no duraría para siempre, y que su mayor enemigo finalmente logró derribar lo único que los mantenía a salvo.
-                </p>
+    <main class="container">
+        <section class="card mb-5">
+            <div class="row g-0 align-items-center">
+                <div class="card-body col-md-8">
+                    <h2 class="card-title">Attack On Titan (Shingeki No Kyojin)</h2>
+                    <p class="card-text">
+                        Attack On Titan (en japonés: "Shingeki No Kyojin") es un anime japonés que adapta el manga creado por Hajime Isayama.
+                        La obra trata acerca de un mundo en el cual la humanidad se encuentra casi extinta, debido a la existencia de unos gigantes
+                        de aspecto humano, los cuales son conocidos como "Titanes". Para evitar la extición, la humanidad se refugia dentro de tres murallas
+                        de 50 metros de altura, las cuales poseen puertas para poder entrar y salir de las mismas, y vive dentro de ellas, 
+                        evitando ser devorados por los Titanes. Todo iba bien hasta que un día, se produce la aparición de un Titan cuya altura superaba la de las murallas, 
+                        y éste destruye la puerta, logrando que los Titanes ingresen dentro de las murallas. Aquel día, la humanidad recordó que la paz en la que vivían 
+                        no duraría para siempre, y que su mayor enemigo finalmente logró derribar lo único que los mantenía a salvo.
+                    </p>
+                </div>
+                <picture class="col-md-4">
+                    <img class="img-fluid rounded-end" src="./media/portada_temporada1.jpg" alt="Portada Temporada 1 Attack On Titan">
+                </picture>
             </div>
-            <picture class="box__image">
-                <img src="./media/portada_temporada1.jpg" alt="Portada Temporada 1 Attack On Titan">
-            </picture>
         </section>
         <section class="opening">
             <h2 class="opening__title">Opening</h2>
@@ -85,5 +88,6 @@
         </div>
     </footer>
     <!-- FOOTER FIN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
