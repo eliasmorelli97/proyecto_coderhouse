@@ -1,0 +1,19 @@
+// Externos
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Koulen&display=swap');
+
+// Misc
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/animations';
+
+// Partials
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
+
+// Views
+@import './pages/home';
+@import './pages/historia';
+@import './pages/personajes';
+@import './pages/titanes';
+@import './pages/militares';
