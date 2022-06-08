@@ -1,5 +1,5 @@
 header {
-    background-color: #151313;
+    background-color: $header-background;
     width: 100%;
     position: fixed;
     display: flex;
@@ -46,7 +46,7 @@ nav {
             display: block;
             content: '';
             width: 0%;
-            background: white;
+            background: $base;
             height: 0.3rem;
             transition: width 0.2s;
         }
@@ -83,7 +83,7 @@ nav {
         position: fixed;
         top: 10rem;
         left: -100%;
-        background: #151313;
+        background: $header-background;
         width: 100%;
         right: 0;
 

@@ -8,14 +8,14 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
 
 a {
   text-decoration: none;
-  font-family: 'Koulen', cursive;
+  font-family: "Koulen", cursive;
   color: white; }
 
 ul {

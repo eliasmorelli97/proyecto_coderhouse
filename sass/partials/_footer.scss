@@ -16,7 +16,7 @@ footer {
     flex-basis: 40%;
 
     &__title {
-        color: white;
+        color: $base;
         font-size: 3em;
         margin-bottom: 1.5rem;
     }
@@ -26,13 +26,13 @@ footer {
         flex-direction: column;
 
         &__control {
-            background-color: rgb(24, 34, 72);
+            background-color: $footer-background;
             border-radius: 0.5rem;
             margin-bottom: 2rem;
             padding: 1rem;
-            border: 0.1rem solid #2980b9;
+            border: 0.1rem solid $footer-component;
             font-size: 1.6em;
-            color: white;
+            color: $base;
         }
 
         #comment {
@@ -42,11 +42,11 @@ footer {
         &__button {
             width: 40%;
             align-self: center;
-            background-color: #2980b9;
+            background-color: $footer-component;
             border-radius: 0.5rem;
             padding: 1.2rem;
             border: none;
-            color: white;
+            color: $base;
             font-size: 1.8em;
             cursor: pointer;
         }
@@ -61,7 +61,7 @@ footer {
     a {
         display: inline-flex;
         font-size: 3em;
-        color: white;
+        color: $base;
         width: 8rem;
         height: 8rem;
         justify-content: center;
@@ -75,7 +75,7 @@ footer {
             position: absolute;
             width: 8rem;
             height: 8rem;
-            background: #2980b9;
+            background: $footer-component;
             border-radius: 50%;
             z-index: -1;
             transition: 0.3s ease-in;
@@ -90,7 +90,7 @@ footer {
         }
 
         &:hover i {
-            background: #2980b9;
+            background: $footer-component;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
