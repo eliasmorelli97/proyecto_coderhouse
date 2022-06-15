@@ -1,10 +1,8 @@
 header {
-    background-color: $header-background;
+    background-color: map-get($colors, header-background);
     width: 100%;
     position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row, space-around, center, 0);
     padding: 2rem;
 
     picture {
@@ -34,9 +32,8 @@ header {
 
 nav {
     ul {
-        display: flex;
+        @include flex(row, flex-start, flex-start, 3rem);
         flex-basis: 60%;
-        gap: 3rem;
 
         a {
             font-size: 3em;
@@ -46,7 +43,7 @@ nav {
             display: block;
             content: '';
             width: 0%;
-            background: $base;
+            background: map-get($colors, base);
             height: 0.3rem;
             transition: width 0.2s;
         }
@@ -83,14 +80,13 @@ nav {
         position: fixed;
         top: 10rem;
         left: -100%;
-        background: $header-background;
+        background: map-get($colors, header-background);
         width: 100%;
         right: 0;
 
         li {
+            @include flex(row, center, flex-start, 0);
             padding: 2rem;
-            display: flex;
-            justify-content: center;
             margin: 0;
         }
     }

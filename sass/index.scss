@@ -3,12 +3,13 @@
 
 // Misc
 @import './misc/variables';
+@import './misc/mixins';
 @import './misc/normalize';
 @import './misc/animations';
 
 // Partials
 @import './partials/header';
-@import './partials/main';
+@import './partials/global';
 @import './partials/footer';
 
 // Views

@@ -1,8 +1,16 @@
 // Colors
-$base: white;
-$header-background: #151313;
-$footer-background: #182248;
-$footer-component: #2980b9;
+$colors: (
+    base: #fff,
+    header-background: #151313,
+    footer-background: #182248,
+    footer-component: #2980b9
+);
+
+@each $color, $value in $colors {
+    #{$color} {
+        color: $value;
+    }
+}
 
 // Font-Family
 $font-principal: 'Barlow', sans-serif;

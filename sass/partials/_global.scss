@@ -1,17 +1,14 @@
 main {
+    @include flex(column, flex-start, stretch, 0);
     margin: 12.5rem auto 1rem auto;
     max-width: 80%;
     font-size: 1em;
-    display: flex;
-    flex-direction: column;
     padding: 2rem;
 }
 
 .box {
     margin: 6rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center, 0);
 
     &__text {
         flex-basis: 65%;
@@ -32,6 +29,10 @@ main {
     &__image {
         flex-basis: 30%;
     }
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -58,7 +59,7 @@ main {
     }
 
     .box {
-        flex-direction: column;
+        @include flex (column, flex-start, stretch, 0);
         margin-top: 3rem;
 
         &__image {
