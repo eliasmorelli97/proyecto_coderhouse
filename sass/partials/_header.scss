@@ -4,6 +4,7 @@ header {
     position: fixed;
     @include flex(row, space-around, center, 0);
     padding: 2rem;
+    z-index: 100;
 
     picture {
         flex-basis: 40%;
