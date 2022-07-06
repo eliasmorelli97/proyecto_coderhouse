@@ -19,6 +19,10 @@ a {
     text-decoration: none;
     font-family: $font-links;
     color: map-get($colors, base);
+
+    &:hover {
+        color: map-get($colors, base);
+    }
 }
 
 ul {
