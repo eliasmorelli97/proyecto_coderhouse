@@ -531,38 +531,5 @@ footer {
       grid-column: 1 / 13;
       grid-row: 15; } }
 
-.titans {
-  display: flex;
-  gap: 6rem;
-  justify-content: center;
-  margin-top: 6rem; }
-  .titans__box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; }
-    .titans__box__title {
-      font-size: 3.1em;
-      margin-bottom: 1.5rem;
-      text-align: center; }
-    .titans__box__paragraph {
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 3rem; }
-    .titans__box__image {
-      width: 100%; }
-
-@media screen and (max-width: 1024px) {
-  .titans__box {
-    font-size: 0.9em; } }
-
-@media screen and (max-width: 900px) {
-  .titans {
-    align-self: center;
-    flex-direction: column; }
-    .titans__box__paragraph {
-      margin-bottom: 0rem; }
-    .titans__box__image {
-      margin-top: 0rem; } }
-
 .militares .box .box__image, .militares .box--row .box__image, .militares .box--column .box__image {
   max-width: 30rem; }
