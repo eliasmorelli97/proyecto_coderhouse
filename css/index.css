@@ -180,9 +180,6 @@ h1 {
 .pointer, a, .contact__form__button {
   cursor: pointer; }
 
-#carouselExampleIndicators {
-  z-index: auto; }
-
 @media screen and (max-width: 1200px) {
   main {
     font-size: 0.9em; } }
@@ -205,7 +202,7 @@ h1 {
     align-items: stretch;
     gap: 0;
     margin-top: 3rem; }
-    .box__image {
+    .box__media {
       margin-top: 3rem; } }
 
 @media screen and (max-width: 500px) {
@@ -214,7 +211,7 @@ h1 {
     font-size: 0.5em; }
   .box, .box--row, .box--column {
     margin: 3rem 0; }
-    .box__image {
+    .box__media {
       margin-top: 1rem; } }
 
 footer {
@@ -531,5 +528,5 @@ footer {
       grid-column: 1 / 13;
       grid-row: 15; } }
 
-.militares .box .box__image, .militares .box--row .box__image, .militares .box--column .box__image {
+.militares .box .box__media, .militares .box--row .box__media, .militares .box--column .box__media {
   max-width: 30rem; }
